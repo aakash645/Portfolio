@@ -91,3 +91,19 @@ document.getElementById("quote-form").addEventListener("submit", function(event)
             document.getElementById("response-message").textContent = "There was an error sending your enquiry. Please try again.";
         });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.createElement("button");
+    toggleButton.classList.add("navbar-toggle");
+    toggleButton.innerHTML = "☰"; // Hamburger icon
+
+    const navbar = document.getElementById("navbar");
+    navbar.prepend(toggleButton);
+
+    const navMenu = navbar.querySelector("ul");
+
+    toggleButton.addEventListener("click", function () {
+        navMenu.classList.toggle("show");
+    });
+});
