@@ -403,3 +403,61 @@ textarea {
     color: green;
     margin-top: 20px;
 }
+
+
+@media (max-width: 1024px) {
+    /* Navbar */
+    .navbar-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #010000;
+        padding: 10px 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Adjustments for sections */
+    .about-content, 
+    .skills-container, 
+    .services, 
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text, .service, .project, #request-form {
+        width: 90%;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}
+
+/* Navbar Toggle Button (Initially Hidden) */
+.navbar-toggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
