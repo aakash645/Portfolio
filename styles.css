@@ -1,0 +1,405 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #010000;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3b82f6;
+}
+
+/* Header Section */
+header {
+    background: #010000;
+    height: 500px;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    justify-content:center;
+     /* To prevent navbar overlap */
+}
+
+.intro-text h1 {
+    font-size: 50px;
+}
+
+#typing-text {
+    font-size: 24px;
+    font-weight: 300;
+    color: red;
+}
+
+/* Preloader Animation */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3b82f6;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.text-heading{
+    margin-top: 100px;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    width: 60%;
+    justify-items: left;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border-color: #3b82f6;
+}
+.about-image img:hover{
+    padding-bottom: 10px;
+    box-shadow: #3b82f6;
+    background-color: red;
+}
+
+/* Skills Section */
+/* Skills Section */
+#skills {
+    padding: 50px 20px;
+    background-color: #060101;
+    text-align: center;
+}
+
+.skills-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #070606;
+    border-radius: 25px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.skill {
+    height: 30px;
+    border-radius: 25px;
+}
+
+.skill-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.skill-text span {
+    font-size: 16px;
+}
+
+.percentage {
+    font-size: 14px;
+    color: #f2eaea;
+}
+
+/* Hover Effects for Skill Bars */
+.skill-bar:hover .skill {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.skill-bar:hover .skill-text {
+    color: #3b82f6;
+}
+
+/* Services Section */
+#services {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.service {
+    width: 30%;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: red;
+
+}
+.service-1 {
+    background: #a3f143;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    justify-content: space-evenly;
+    box-shadow: red;
+    
+
+}
+.service-2 {
+    background: #a3f143;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    justify-content: space-evenly;
+    box-shadow: red;
+    
+
+}
+
+.service:hover {
+    transform: scale(1.05);
+    background-color: blue;
+    color: white;
+}
+.service-1:hover {
+    transform: scale(1.05);
+    background-color: blue;
+    color: rgb(10, 7, 7);
+}
+.service-2:hover {
+    transform: scale(1.05);
+    background-color: blue;
+    color: rgb(255, 249, 249);
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 20px;
+    width: 250px;
+    border: 2px solid rgb(204, 154, 15);
+
+}
+.project :hover{
+padding-top: 20px;
+border-color: blue;
+color: blue;}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project .btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background: #3b82f6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #080505;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #f4f6f2;
+    margin: 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #3b82f6;
+}
+
+/* Animation for bars */
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.bar {
+    animation: fillBar 1s ease-out forwards;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar Color Change on Scroll */
+.scrolled {
+    background-color: #444;
+}
+
+
+
+#request-form {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#request-form p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #010205;
+}
+
+.submit-btn:active {
+    background-color: #1d4ed8;
+}
+
+/* Response Message */
+#response-message {
+    text-align: center;
+    font-size: 18px;
+    color: green;
+    margin-top: 20px;
+}

@@ -1,0 +1,69 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+#skills {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.skills-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.skill {
+    height: 30px;
+    border-radius: 25px;
+}
+
+.skill-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.skill-text span {
+    font-size: 16px;
+}
+
+.percentage {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Hover Effects for Skill Bars */
+.skill-bar:hover .skill {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.skill-bar:hover .skill-text {
+    color: #3b82f6;
+}
